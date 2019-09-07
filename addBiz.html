@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Sunshine Ministries Contacts</title>
+  </head>
+  <body>
+<h1>Sunshine Ministries - Add Organization Contact</h1>
+
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="logo.PNG"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only" width="30" height="30" alt="Sunshine">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="actions.html">Actions <span class="sr-only" width="30" height="30" alt="Sunshine">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Add Contact
+              </a>
+              <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="addBiz.html">Business/Org</a>
+                <a class="dropdown-item" href="#">Church</a>
+                <a class="dropdown-item" href="#">Individual</a>
+              </div>
+            </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0"> <!--select type of contact for search-->
+                <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Contacts</label>
+                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                  <option selected>Type</option>
+                  <option value="1">Business/Org</option>
+                  <option value="2">Church</option>
+                  <option value="3">Individual</option>
+                </select>
+                    
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav> <!--end of navigation bar-->
+
+      <h2>Add Organization Contact</h2>
+<br>
+      <form>
+            <fieldset>
+                <legend>Basic Info</legend>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="orgName">Name(s)</label>
+                        <input type="text" class="form-control" placeholder="Organization Name"> <!--Enter Org Name-->
+                    </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                      <input type="text" class="form-control" placeholder="Nickname"> <!--Enter Org Nickname-->
+                  </div>
+              </div>
+<br>
+                <div class="form-row"> <!--Address one-->
+                    <div class="form-group col-md-6">
+                        <label for="orgAddress">Address 1 (Mailing)</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                </div>
+
+                <div class="form-row"> <!--City-->
+                    <div class="form-group col-md-4">
+                        <label for="orgCity">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group col-md-4"> <!--State-->
+                        <label for="orgState">State</label>
+                        <select id="orgState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                         </select>
+                    </div>
+                    <div class="form-group col-md-2"> <!--Zip-->
+                        <label for="orgZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                </div>
+<br>
+                <div class="form-row"> <!--Address two-->
+                  <div class="form-group col-md-6">
+                      <label for="orgAddress2">Address 2 (Other)</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                  </div>
+              </div>
+              <div class="form-row"> 
+                <div class="form-group col-md-4"> <!--City-->
+                    <label for="orgCity2">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4"> <!--State-->
+                    <label for="orgState">State</label>
+                    <select id="orgState2" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                     </select>
+                </div>
+                <div class="form-group col-md-2"> <!--Zip-->
+                    <label for="orgZip2">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+    </fieldset> <!--End of Basic Info-->
+<br>
+    <fieldset>
+      <legend>Office Contact</legend>
+          <div class="form-row">
+              <div class="form-group col-md-4">
+                  <label for="orgPhone">Phone (Office)</label>
+                  <input type="text" class="form-control" placeholder="XXX-XXX-XXXX"> <!--Enter an Office #-->
+              </div>
+     
+            <div class="form-group col-md-4">
+                <label for="orgCell">Phone (Cell)</label>
+                <input type="text" class="form-control" placeholder="XXX-XXX-XXXX"> <!--Enter a cell #-->
+            </div>
+        </div>
+
+        
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="orgFax">Fax</label>
+                <input type="text" class="form-control" placeholder="XXX-XXX-XXXX"> <!--Enter a fax #-->
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="orgEmail">Email</label>
+                <input type="text" class="form-control" placeholder="biz@email.com"> <!--Enter an email-->
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="orgWebsite">Website</label>
+                <input type="text" class="form-control" placeholder="Paste Link Here"> <!--Enter a website-->
+            </div>
+        </div>
+    </fieldset>
+       
+    <fieldset>
+        <legend>Description</legend>
+              <div class="form-group col-md-4">
+                <label for="orgType">Type of Organization of Organization</label>
+                  <select class="form-control">
+                    <option>Choose...</option>
+                    <option>Business</option>
+                    <option>Organization</option>
+                    <option>School</option>
+                  </select>
+              </div>
+
+              <div class="form-group col-md-8">
+                <label for="orgDescription">Description of Organization</label>
+                <textarea class="form-control" id="orgDescription" rows="3"></textarea>
+              </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Main Contact</legend>
+     
+
+    </fieldset>
+
+        </form>
+<br>
+
+
+
+</div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
